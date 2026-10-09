@@ -1,20 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy & Data Deletion Instructions</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
-    h1, h2 { color: #111; }
+    :root {
+      --bg: #0f172a;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --primary: #2563eb;
+      --border: #e2e8f0;
+      --highlight: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 40px 16px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 48px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .meta-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #334155;
+    }
+
+    ul {
+      margin-bottom: 20px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+
+    strong {
+      color: #0f172a;
+    }
+
+    .callout {
+      background: var(--highlight);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+
+    .callout p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .deletion-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    .deletion-box h3 {
+      font-size: 1.15rem;
+      color: #1e40af;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #0f172a;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: October 2026</p>
-  <h2>Data Collection & Usage</h2>
-  <p>This service processes incoming and outgoing WhatsApp messages exclusively to provide automated support responses. We do not sell or share personal data with unauthorized third parties.</p>
-  <h2>Data Deletion</h2>
-  <p id="deletion">To request data deletion, contact us at your-email@example.com.</p>
+
+  <main class="container">
+    <header>
+      <h1>Privacy Policy & Data Processing</h1>
+      <div class="meta-info">
+        <span>Effective Date: October 2026</span> • <span>Platform: WhatsApp Automation Platform</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>
+        This Privacy Policy describes how our platform ("we", "our", or "the Service") collects, uses, and safeguards information when integrating with Meta Platforms, Inc., the WhatsApp Business Platform (Cloud API), and our automated messaging systems.
+      </p>
+      <p>
+        We operate as a technical intermediary and SaaS communication provider. We handle business messaging data strictly to facilitate customer communication and automated conversational workflows.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Information We Process</h2>
+      <p>When utilizing our WhatsApp integration services, we process the following categories of data:</p>
+      <ul>
+        <li><strong>Account Authentication & Tokens:</strong> Meta App User IDs, WhatsApp Business Account (WABA) IDs, Phone Number IDs, and encrypted OAuth access tokens required to invoke Meta Graph APIs.</li>
+        <li><strong>Message Payloads:</strong> Inbound and outbound message text, timestamps, message status callbacks (sent, delivered, read), and sender/recipient phone numbers.</li>
+        <li><strong>Metadata & Logs:</strong> Webhook delivery event headers, system status logs, and verification challenges required for service uptime and troubleshooting.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. How We Use Data</h2>
+      <p>All data processed through Meta APIs is utilized exclusively for the following operations:</p>
+      <ul>
+        <li>Executing automated replies, chat sequences, and conversational routing as configured by connected accounts.</li>
+        <li>Subscribing client WhatsApp Business Accounts to our webhook infrastructure via Meta's Graph API.</li>
+        <li>Providing analytics, conversation histories, and status logs to authorized dashboard administrators.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>Strict Anti-Monetization Policy:</strong> We do not sell, rent, monetize, or disclose your WhatsApp communication data, subscriber lists, or message transcripts to third-party data brokers or marketing platforms.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. Relationship with Meta Platforms, Inc.</h2>
+      <p>
+        Our service utilizes the official <strong>WhatsApp Business Cloud API</strong> operated by Meta Platforms, Inc. By connecting your WhatsApp Business account, you acknowledge that message delivery, temporary payload transit, and phone number validations are subject to the 
+        <strong>WhatsApp Business Terms of Service</strong> and <strong>Meta Hosting Terms for Cloud API</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Data Retention & Security</h2>
+      <p>
+        Authentication secrets and access tokens are encrypted at rest using industry-standard AES-256 encryption. Transient message payloads processed by automated webhooks are held only for the duration necessary to deliver replies or satisfy client dashboard logging limits, after which they are systematically purged.
+      </p>
+    </section>
+
+    <section id="deletion">
+      <h2>6. Data Deletion Instructions (User Data Erasure)</h2>
+      <div class="deletion-box">
+        <h3>How to Request Complete Data Deletion</h3>
+        <p>
+          In accordance with Meta Developer Data Policies and global data privacy standards (GDPR/CCPA), users and businesses can request the immediate and total deletion of their associated data from our servers at any time.
+        </p>
+        <p>To request data erasure, follow these steps:</p>
+        <ul>
+          <li><strong>Option A (Email Request):</strong> Send an email to <code>support@yourdomain.com</code> (or your primary contact email) with the subject line <em>"Data Deletion Request"</em>. Specify your WhatsApp Phone Number ID or Business Name.</li>
+          <li><strong>Option B (Account Disconnect):</strong> From your Facebook/Meta account, navigate to <em>Settings & Privacy &gt; Settings &gt; Business Integrations</em>, locate our application, and click <em>Remove</em>.</li>
+        </ul>
+        <p>
+          Upon receiving a deletion request, we will remove your access tokens, stored message history, and registered account associations from our active databases within <strong>48 hours</strong>, sending a confirmation once complete.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Contact Information</h2>
+      <p>
+        For inquiries regarding this policy, security vulnerabilities, or privacy practices, contact us at:
+      </p>
+      <p>
+        <strong>Email:</strong> <code>support@yourdomain.com</code><br />
+        <strong>Service:</strong> WhatsApp Cloud Automation Gateway
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 WhatsApp Cloud Automation Gateway. All rights reserved.
+    </footer>
+  </main>
+
 </body>
 </html>

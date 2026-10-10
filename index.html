@@ -3,226 +3,403 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy & Terms of Service</title>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text-main: #1e293b;
-      --text-muted: #64748b;
-      --primary: #2563eb;
-      --border: #e2e8f0;
-      --highlight: #f1f5f9;
-    }
+  <title>nexChat by Exira Labs — Turn customer conversations into business actions</title>
+  <meta name="description" content="nexChat helps small businesses answer customer questions, manage products and orders, and simplify everyday customer interactions with AI. Built by Exira Labs." />
+  <link rel="canonical" href="https://nexchat.exiralabs.com/" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="nexChat by Exira Labs" />
+  <meta property="og:title" content="nexChat — Turn customer conversations into business actions" />
+  <meta property="og:description" content="AI-powered customer conversations, product discovery, carts, orders and payment tracking for small businesses." />
+  <meta property="og:url" content="https://nexchat.exiralabs.com/" />
+  <meta name="twitter:card" content="summary" />
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text-main);
-      line-height: 1.7;
-      padding: 40px 16px;
-    }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "nexChat",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://nexchat.exiralabs.com/",
+    "description": "AI-powered customer conversation and business operations assistant for small businesses.",
+    "publisher": { "@type": "Organization", "name": "Exira Labs", "url": "https://exiralabs.com" }
+  }
+  </script>
 
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      background: var(--card-bg);
-      padding: 48px 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--border);
-    }
-
-    .nav-tabs {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 32px;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 16px;
-    }
-
-    .nav-tabs a {
-      text-decoration: none;
-      font-weight: 600;
-      color: var(--primary);
-      padding: 6px 14px;
-      border-radius: 6px;
-      background: var(--highlight);
-      font-size: 0.95rem;
-    }
-
-    .nav-tabs a:hover {
-      background: #e2e8f0;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin-top: 40px;
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: #0f172a;
-      margin-top: 24px;
-      margin-bottom: 8px;
-    }
-
-    p { margin-bottom: 14px; color: #334155; }
-    ul { margin-bottom: 18px; padding-left: 24px; }
-    li { margin-bottom: 6px; color: #334155; }
-
-    .callout {
-      background: var(--highlight);
-      border-left: 4px solid var(--primary);
-      padding: 14px 18px;
-      border-radius: 0 8px 8px 0;
-      margin: 20px 0;
-      font-size: 0.95rem;
-    }
-
-    .deletion-box {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 8px;
-      padding: 24px;
-      margin-top: 20px;
-    }
-
-    .deletion-box h3 { color: #1e40af; margin-top: 0; }
-
-    code {
-      font-family: ui-monospace, Menlo, Consolas, monospace;
-      font-size: 0.9em;
-      background: #f1f5f9;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-
-    footer {
-      margin-top: 48px;
-      border-top: 1px solid var(--border);
-      padding-top: 24px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body>
+<body data-home>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main class="container">
-    <div class="nav-tabs">
-      <a href="#privacy">Privacy Policy</a>
-      <a href="#terms">Terms of Service</a>
-      <a href="#deletion">Data Deletion Instructions</a>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="nexChat home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 10.5A2.5 2.5 0 0 1 11.5 8h9A2.5 2.5 0 0 1 23 10.5v7a2.5 2.5 0 0 1-2.5 2.5H15l-4.2 3.4c-.5.4-1.3 0-1.3-.6V20A2.5 2.5 0 0 1 9 17.5z" fill="#fff"/><path d="M13 17v-4.2c0-.5.6-.7.9-.3l3.2 4.2c.3.4.9.2.9-.3V12" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-name">nex<span>Chat</span></span>
+        <span class="brand-by">by Exira Labs</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="#contact">Get in touch</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- PRIVACY POLICY -->
-    <section id="privacy">
-      <h1>Privacy Policy</h1>
-      <p style="color: var(--text-muted); font-size: 0.9rem;">Effective Date: October 2026</p>
+  <main id="main">
 
-      <p>
-        This Privacy Policy explains how our platform collects, uses, and safeguards information when integrating with Meta Platforms, Inc. and the WhatsApp Business Platform (Cloud API).
-      </p>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-badge"><span class="dot" aria-hidden="true"></span>AI customer conversations for small businesses</span>
+          <h1>Turn customer conversations into <span class="accent">business actions.</span></h1>
+          <p class="hero-sub">nexChat helps small businesses answer customer questions, manage products and orders, and simplify everyday customer interactions with AI.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-secondary" href="#features">Explore features</a>
+          </div>
+          <p class="hero-note">nexChat is under active development by Exira Labs.</p>
+        </div>
 
-      <h3>1. Data We Process</h3>
-      <ul>
-        <li><strong>Account Identifiers:</strong> Meta User IDs, WhatsApp Business Account (WABA) IDs, Phone Number IDs, and OAuth access tokens.</li>
-        <li><strong>Messaging Payloads:</strong> Inbound and outbound message text, timestamps, and delivery/read receipts.</li>
-        <li><strong>Diagnostic Logs:</strong> System event metadata and webhook verification tokens.</li>
-      </ul>
-
-      <h3>2. Purpose of Data Processing</h3>
-      <p>Data is used exclusively to:</p>
-      <ul>
-        <li>Automate inbound and outbound customer support messages.</li>
-        <li>Route webhook notifications to appropriate tenant dashboards.</li>
-        <li>Maintain API connectivity with Meta's Graph API.</li>
-      </ul>
-      <div class="callout">
-        We do not sell, license, or monetize customer communication logs or personal data to third parties or marketing platforms.
+        <div>
+          <div class="mockup" role="img" aria-label="Illustration of the nexChat interface: a customer asks about a product, the nexChat assistant confirms availability, adds it to the cart, creates an order and shares payment instructions, while a side panel shows the order awaiting payment.">
+            <div class="mockup-bar" aria-hidden="true">
+              <div class="mockup-dots"><i></i><i></i><i></i></div>
+              <span class="mockup-title">nexChat · Conversations</span>
+            </div>
+            <div class="mockup-body" aria-hidden="true">
+              <div class="chat">
+                <div class="chat-head">
+                  <span class="avatar">MR</span>
+                  <div><strong>Maya R.</strong><small>Customer · returning</small></div>
+                </div>
+                <div class="bubble in">Hi! Do you have the linen shirt in medium, in blue?</div>
+                <div class="bubble out"><span class="bubble-tag">nexChat AI</span>Yes, the Linen Shirt in Sky Blue is available in M. Shall I add it to your cart?</div>
+                <div class="product-card">
+                  <span class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 4 6l2 4 2-1v12h8V9l2 1 2-4-4-3a4 4 0 0 1-8 0z"/></svg></span>
+                  <div><strong>Linen Shirt · Sky Blue / M</strong><small>$34.00 · In stock</small></div>
+                </div>
+                <div class="bubble in">Yes please, two of them.</div>
+                <div class="bubble out"><span class="bubble-tag">nexChat AI</span>Done! Order #1042 is created. Here are the payment instructions…</div>
+                <div class="chat-actions"><span class="chip">Cart updated</span><span class="chip">Order created</span></div>
+              </div>
+              <div class="side">
+                <span class="side-label">Order #1042</span>
+                <div class="side-card">
+                  <div class="row"><span>Items</span><b>2</b></div>
+                  <div class="row"><span>Total</span><b>$68.00</b></div>
+                  <div class="row" style="margin-top:8px"><span class="status wait">Awaiting payment</span></div>
+                </div>
+                <span class="side-label">Customer</span>
+                <div class="side-card">
+                  <div class="row"><span>Past orders</span><b>3</b></div>
+                  <div class="row"><span>Last seen</span><b>Today</b></div>
+                </div>
+                <span class="side-label">Handling</span>
+                <div class="side-card">
+                  <div class="row"><span class="status info">AI assisting</span></div>
+                  <div class="row" style="margin-top:6px"><span>Seller can take over anytime</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mockup-caption">Illustrative example. Names, products and prices are fictional.</p>
+        </div>
       </div>
-
-      <h3>3. Data Security & Storage</h3>
-      <p>
-        Tokens and credentials are securely stored using industry-standard encryption protocols. Message payloads are maintained only as long as necessary to process automated conversational logic.
-      </p>
     </section>
 
-    <!-- DATA DELETION -->
-    <section id="deletion" style="margin-top: 40px;">
-      <div class="deletion-box">
-        <h3>User Data Deletion Instructions</h3>
-        <p>
-          In accordance with Meta Developer Data Policies and international privacy regulations, you have the right to request deletion of all stored data associated with your account.
-        </p>
-        <p><strong>To request deletion:</strong></p>
-        <ul>
-          <li>Email your request to <code>support@example.com</code> with the subject <em>"Data Deletion Request"</em> and your Phone Number ID.</li>
-          <li>Or navigate to your Facebook Account <em>Settings & Privacy &gt; Settings &gt; Business Integrations</em> and disconnect our app.</li>
-        </ul>
-        <p>All associated tokens and cached logs will be permanently deleted within 48 hours of confirmation.</p>
+    <!-- ===== Problem & solution ===== -->
+    <section class="section section-alt" id="product">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why nexChat</span>
+          <h2 class="section-title">Customer conversations shouldn't be a second full-time job.</h2>
+          <p class="section-lead">Small businesses run on conversations, but answering the same questions, tracking orders across chats and remembering follow-ups takes hours every week.</p>
+        </div>
+        <div class="compare">
+          <div class="compare-card before">
+            <h3>Without nexChat</h3>
+            <ul class="compare-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Answering the same questions about price, sizes, availability and delivery again and again.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Conversations scattered across threads, with no single view of each customer.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Orders written down by hand and payment status checked one message at a time.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Follow-ups forgotten, and customers left waiting outside business hours.</span></li>
+            </ul>
+          </div>
+          <div class="compare-card after">
+            <h3>With nexChat</h3>
+            <ul class="compare-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Common questions answered from your own products, policies and FAQs.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Each customer's conversation and order history in one place.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Carts and orders created from the conversation, with payment status you can track.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>You stay in control: review, step in, or take over any conversation.</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- TERMS OF SERVICE -->
-    <section id="terms" style="margin-top: 50px;">
-      <h2>Terms of Service</h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem;">Effective Date: October 2026</p>
-
-      <h3>1. Acceptance of Terms</h3>
-      <p>
-        By accessing or connecting your WhatsApp Business Account to this service, you agree to be bound by these Terms of Service, all applicable laws, and Meta's WhatsApp Business Messaging Policies.
-      </p>
-
-      <h3>2. Authorized Use</h3>
-      <p>
-        You agree to use this integration solely for lawful conversational communications. You must comply with all WhatsApp policies, including obtaining explicit opt-in consent from end users before initiating business communications.
-      </p>
-
-      <h3>3. Prohibited Activities</h3>
-      <ul>
-        <li>Sending unsolicited spam or deceptive marketing messages.</li>
-        <li>Distributing malware, phishing links, or harassing content.</li>
-        <li>Attempting to bypass WhatsApp Cloud API rate limits or security controls.</li>
-      </ul>
-
-      <h3>4. Meta Platform Policies</h3>
-      <p>
-        Your use of WhatsApp messaging features is subject to the terms established by Meta Platforms, Inc. Failure to comply with Meta's Business Policies may result in immediate suspension or termination of your account access.
-      </p>
-
-      <h3>5. Limitation of Liability & Disclaimers</h3>
-      <p>
-        The service is provided on an "as is" and "as available" basis. We are not liable for message delivery interruptions, downtime, or service terminations caused by third-party infrastructure providers or Meta platform updates.
-      </p>
-
-      <h3>6. Contact</h3>
-      <p>
-        Questions regarding these Terms or our Privacy Policy should be directed to <code>support@example.com</code>.
-      </p>
+    <!-- ===== Features ===== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Features</span>
+          <h2 class="section-title">Everything a conversation needs to become a completed task.</h2>
+          <p class="section-lead">nexChat connects AI-assisted replies to the parts of your business customers actually ask about.</p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></div>
+            <h3>AI-powered conversations</h3>
+            <p>Understands what customers are asking and replies naturally, using your business information.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg></div>
+            <h3>Product catalog &amp; discovery</h3>
+            <p>Manage products, variants, prices and stock, and help customers find the right item in the chat.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 11.4a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21 7H6"/></svg></div>
+            <h3>Cart &amp; order management</h3>
+            <p>Build carts and create orders from the conversation, then track them from your dashboard.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></div>
+            <h3>Customer &amp; conversation history</h3>
+            <p>See past messages, orders and preferences for every customer before you reply.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+            <h3>Payment instructions &amp; status</h3>
+            <p>Share your payment instructions and keep track of which orders are paid, pending or cancelled.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M9 7h7M9 11h5"/></svg></div>
+            <h3>Business knowledge &amp; FAQs</h3>
+            <p>Teach nexChat your opening hours, delivery areas, return policy and other answers you give often.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 11l2 2 4-4"/></svg></div>
+            <h3>Human takeover &amp; seller control</h3>
+            <p>Pause the AI, step into any conversation, and decide what nexChat can and can't do on your behalf.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 15h3"/></svg></div>
+            <h3>More workflows over time</h3>
+            <p>Designed to grow beyond commerce into workflows such as appointment booking and reservations as they become available.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      &copy; 2026 Cloud Automation Services. All rights reserved.
-    </footer>
+    <!-- ===== How it works ===== -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">How it works</span>
+          <h2 class="section-title">From message to action, in four steps.</h2>
+          <p class="section-lead">nexChat sits between your customers and your business data, so each request is answered and, where it makes sense, acted on.</p>
+        </div>
+        <ol class="steps" style="list-style:none">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3>A customer sends a message</h3>
+            <p>A customer asks a question, looks for a product, or wants to place an order.</p>
+            <div class="step-example">"Is the blue shirt available in M?"</div>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3>AI understands the request</h3>
+            <p>nexChat works out what the customer wants, using your catalog and business knowledge.</p>
+            <div class="step-example">intent: check availability<br>product: Linen Shirt · M</div>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3>nexChat takes the right action</h3>
+            <p>It looks up stock, updates a cart, creates an order or shares payment instructions, within the limits you set.</p>
+            <div class="step-example">stock check → in stock</div>
+          </li>
+          <li class="step">
+            <span class="step-num">4</span>
+            <h3>Everyone gets a clear response</h3>
+            <p>The customer gets an answer, and your team sees the conversation and any orders in the dashboard.</p>
+            <div class="step-example">reply sent · order #1042 logged</div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Audience ===== -->
+    <section class="section" id="who-its-for">
+      <div class="container audience">
+        <div>
+          <span class="eyebrow">Built for growing businesses</span>
+          <h2 class="section-title">Made for teams where every conversation counts.</h2>
+          <p class="section-lead">nexChat is designed for small and growing businesses that sell or serve customers through conversations and want to respond faster without losing the personal touch.</p>
+          <ul class="check-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>No technical team required to get started</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Works with the products, prices and policies you already have</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>You decide when the AI replies and when a person does</span></li>
+          </ul>
+        </div>
+        <div class="audience-list">
+          <div class="audience-item">
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M5 12v8h14v-8"/></svg></span>
+            <div><strong>Online sellers</strong><span>Shops that take orders through chat and social channels.</span></div>
+          </div>
+          <div class="audience-item">
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg></span>
+            <div><strong>Retail &amp; boutiques</strong><span>Stores with catalogs, variants and frequent stock questions.</span></div>
+          </div>
+          <div class="audience-item">
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M4 11l1 9h14l1-9"/></svg></span>
+            <div><strong>Food &amp; home businesses</strong><span>Bakers, caterers and home kitchens handling daily orders.</span></div>
+          </div>
+          <div class="audience-item">
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            <div><strong>Service providers</strong><span>Businesses that will benefit from booking and reservation workflows.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Integrations ===== -->
+    <section class="section section-alt" id="integrations">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Channels &amp; integrations</span>
+          <h2 class="section-title">Meeting customers where they already message.</h2>
+          <p class="section-lead">We're building nexChat to connect with the messaging channels small businesses rely on. Here is where each one stands today.</p>
+        </div>
+        <div class="integrations">
+          <div class="integration">
+            <div class="integration-head">
+              <span class="icon-box" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
+              <span class="pill dev">In development</span>
+            </div>
+            <h3>WhatsApp Business Platform</h3>
+            <p>Connecting a business's WhatsApp number through Meta's official WhatsApp Business Platform (Cloud API).</p>
+          </div>
+          <div class="integration">
+            <div class="integration-head">
+              <span class="icon-box" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></span>
+              <span class="pill dev">In development</span>
+            </div>
+            <h3>Instagram Messaging</h3>
+            <p>Responding to Instagram direct messages through Meta's official messaging APIs for professional accounts.</p>
+          </div>
+          <div class="integration">
+            <div class="integration-head">
+              <span class="icon-box" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span>
+              <span class="pill planned">Planned</span>
+            </div>
+            <h3>More channels &amp; tools</h3>
+            <p>Additional channels and business tools will be considered based on what our users need.</p>
+          </div>
+        </div>
+        <p class="fine-print">Integration availability may change during development. nexChat is not affiliated with, endorsed by, or sponsored by Meta Platforms, Inc. WhatsApp and Instagram are trademarks of their respective owners.</p>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <span class="eyebrow">About</span>
+          <h2 class="section-title">Built by Exira Labs.</h2>
+          <p class="section-lead">Exira Labs builds software that simplifies everyday business workflows using technology and AI.</p>
+          <p style="margin-top:16px">nexChat is our product for customer conversations. We started with commerce (questions, products, carts, orders and payments) because those are the conversations small businesses handle most, and we're designing it to support more customer-service workflows over time.</p>
+          <p style="margin-top:14px">Learn more about the company at <a href="https://exiralabs.com" rel="noopener">exiralabs.com</a>.</p>
+        </div>
+        <div class="principles">
+          <div class="principle">
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 11l2 2 4-4"/></svg></span>
+            <div><h3>Businesses stay in control</h3><p>AI assists; people decide. Sellers can review, override or take over at any time.</p></div>
+          </div>
+          <div class="principle">
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <div><h3>Respect for customer data</h3><p>We use data to provide the service, never sell it, and honour deletion requests. See our <a href="privacy-policy.html">Privacy Policy</a>.</p></div>
+          </div>
+          <div class="principle">
+            <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg></span>
+            <div><h3>Practical, not flashy</h3><p>We focus on features that save real time in day-to-day work.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact" style="padding-top:0">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <span class="eyebrow">Contact &amp; support</span>
+            <h2>Have a question about nexChat?</h2>
+            <p>Whether you're interested in using nexChat, need support, or have a privacy question, email us and we'll get back to you.</p>
+          </div>
+          <div class="contact-options">
+            <a class="contact-option" href="mailto:support@exiralabs.com" data-contact-email>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              <span><small>General &amp; support</small><strong data-contact-email-text>support@exiralabs.com</strong></span>
+            </a>
+            <a class="contact-option" href="data-deletion.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v5M14 11v5"/></svg>
+              <span><small>Privacy</small><strong>Request data deletion</strong></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="./" aria-label="nexChat home">
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 10.5A2.5 2.5 0 0 1 11.5 8h9A2.5 2.5 0 0 1 23 10.5v7a2.5 2.5 0 0 1-2.5 2.5H15l-4.2 3.4c-.5.4-1.3 0-1.3-.6V20A2.5 2.5 0 0 1 9 17.5z" fill="#fff"/><path d="M13 17v-4.2c0-.5.6-.7.9-.3l3.2 4.2c.3.4.9.2.9-.3V12" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="brand-name">nex<span>Chat</span></span>
+          </a>
+          <p>nexChat by Exira Labs. AI-powered customer conversations for small businesses.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="mailto:support@exiralabs.com" data-contact-email data-contact-email-text>support@exiralabs.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="data-deletion.html">Data Deletion Instructions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Exira Labs. All rights reserved.</span>
+        <span><a href="https://exiralabs.com" rel="noopener">exiralabs.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
 </body>
 </html>

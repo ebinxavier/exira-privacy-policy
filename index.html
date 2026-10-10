@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>nexChat by Exira Labs — Turn customer conversations into business actions</title>
-  <meta name="description" content="nexChat helps small businesses answer customer questions, manage products and orders, and simplify everyday customer interactions with AI. Built by Exira Labs." />
+  <meta name="description" content="nexChat brings Instagram, WhatsApp and Telegram conversations into one inbox and uses AI to answer customers, manage products and orders, and simplify everyday customer interactions. Built by Exira Labs." />
   <link rel="canonical" href="https://nexchat.exiralabs.com/" />
   <meta name="theme-color" content="#4f46e5" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="nexChat by Exira Labs" />
   <meta property="og:title" content="nexChat — Turn customer conversations into business actions" />
-  <meta property="og:description" content="AI-powered customer conversations, product discovery, carts, orders and payment tracking for small businesses." />
+  <meta property="og:description" content="One AI-powered inbox for Instagram, WhatsApp and Telegram, with product discovery, carts, orders and payment tracking for small businesses." />
   <meta property="og:url" content="https://nexchat.exiralabs.com/" />
   <meta name="twitter:card" content="summary" />
 
@@ -32,13 +32,21 @@
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body data-home>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="ig-grad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".35" stop-color="#fa7e1e"/><stop offset=".65" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient>
+    </defs>
+    <symbol id="ico-ig" viewBox="0 0 36 36"><rect width="36" height="36" rx="10" fill="url(#ig-grad)"/><rect x="9" y="9" width="18" height="18" rx="5.5" fill="none" stroke="#fff" stroke-width="2.2"/><circle cx="18" cy="18" r="4.3" fill="none" stroke="#fff" stroke-width="2.2"/><circle cx="23.4" cy="12.6" r="1.3" fill="#fff"/></symbol>
+    <symbol id="ico-wa" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="#25d366"/><g transform="translate(6 6)"><path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.2 8.6c.2-.4.5-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2 0 .5-.1.6l-.5.6c.6 1.2 1.6 2.1 2.8 2.7l.6-.6c.2-.2.4-.2.6-.1l1.6.7c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.5.4-1.3.6-2.2.4-2.5-.6-4.6-2.7-5.2-5.2-.2-.8 0-1.6.4-2.2z" fill="#fff"/></g></symbol>
+    <symbol id="ico-tg" viewBox="0 0 36 36"><circle cx="18" cy="18" r="18" fill="#229ed9"/><g transform="translate(6 6.5)"><path d="M4.6 11.4 18.3 6.1c.7-.3 1.3.2 1.1 1.2l-2.3 10.9c-.2.8-.7 1-1.4.6l-3.6-2.7-1.8 1.7c-.2.2-.4.4-.8.4l.3-3.7 6.6-6c.3-.3-.1-.4-.4-.2l-8.2 5.2-3.5-1.1c-.8-.2-.8-.8.2-1.1z" fill="#fff"/></g></symbol>
+  </svg>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="nexChat home">
-        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 10.5A2.5 2.5 0 0 1 11.5 8h9A2.5 2.5 0 0 1 23 10.5v7a2.5 2.5 0 0 1-2.5 2.5H15l-4.2 3.4c-.5.4-1.3 0-1.3-.6V20A2.5 2.5 0 0 1 9 17.5z" fill="#fff"/><path d="M13 17v-4.2c0-.5.6-.7.9-.3l3.2 4.2c.3.4.9.2.9-.3V12" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M9 0h14a9 9 0 0 1 9 9v14a9 9 0 0 1-9 9H3a3 3 0 0 1-3-3V9a9 9 0 0 1 9-9z" fill="#4f46e5"/><path d="M10.5 22V10l11 12V10" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="brand-name">nex<span>Chat</span></span>
         <span class="brand-by">by Exira Labs</span>
       </a>
@@ -47,6 +55,7 @@
         <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="#channels">Channels</a>
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
         <a href="#about">About</a>
@@ -62,9 +71,9 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="hero-badge"><span class="dot" aria-hidden="true"></span>AI customer conversations for small businesses</span>
+          <span class="hero-badge"><span class="dot" aria-hidden="true"></span>One inbox for Instagram, WhatsApp &amp; Telegram</span>
           <h1>Turn customer conversations into <span class="accent">business actions.</span></h1>
-          <p class="hero-sub">nexChat helps small businesses answer customer questions, manage products and orders, and simplify everyday customer interactions with AI.</p>
+          <p class="hero-sub">nexChat brings your Instagram, WhatsApp and Telegram messages into one place, and uses AI to answer customer questions, manage products and orders, and simplify everyday customer interactions.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="#contact">Get in touch</a>
             <a class="btn btn-secondary" href="#features">Explore features</a>
@@ -82,7 +91,7 @@
               <div class="chat">
                 <div class="chat-head">
                   <span class="avatar">MR</span>
-                  <div><strong>Maya R.</strong><small>Customer · returning</small></div>
+                  <div><strong>Maya R.</strong><small>via Instagram · returning</small></div>
                 </div>
                 <div class="bubble in">Hi! Do you have the linen shirt in medium, in blue?</div>
                 <div class="bubble out"><span class="bubble-tag">nexChat AI</span>Yes, the Linen Shirt in Sky Blue is available in M. Shall I add it to your cart?</div>
@@ -119,8 +128,140 @@
       </div>
     </section>
 
+    <!-- ===== Channels ===== -->
+    <section class="section section-alt" id="channels">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">One inbox, every channel</span>
+          <h2 class="section-title">Instagram, WhatsApp and Telegram, all in one place.</h2>
+          <p class="section-lead">Connect your messaging channels to nexChat and every customer conversation lands in a single inbox, where AI helps you reply, take orders and follow up.</p>
+        </div>
+
+        <div class="flow">
+          <svg class="flow-diagram" viewBox="0 0 480 400" role="img" aria-labelledby="flow-title flow-desc">
+            <title id="flow-title">How nexChat connects your channels</title>
+            <desc id="flow-desc">Messages from Instagram, WhatsApp and Telegram flow into nexChat AI, which understands each request and sends the conversation to one unified inbox.</desc>
+
+            <path id="flow-p1" class="fl-path" d="M192 70 C 276 70, 278 200, 330 200" />
+            <path id="flow-p2" class="fl-path" d="M192 200 L 330 200" />
+            <path id="flow-p3" class="fl-path" d="M192 330 C 276 330, 278 200, 330 200" />
+
+            <g class="flow-motion" aria-hidden="true">
+              <circle r="5" fill="#d62976"><animateMotion dur="2.4s" repeatCount="indefinite" begin="0s"><mpath href="#flow-p1" /></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" repeatCount="indefinite" begin="0s" /></circle>
+              <circle r="5" fill="#d62976"><animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s"><mpath href="#flow-p1" /></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" repeatCount="indefinite" begin="1.2s" /></circle>
+              <circle r="5" fill="#25d366"><animateMotion dur="2.4s" repeatCount="indefinite" begin="0.4s"><mpath href="#flow-p2" /></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" repeatCount="indefinite" begin="0.4s" /></circle>
+              <circle r="5" fill="#25d366"><animateMotion dur="2.4s" repeatCount="indefinite" begin="1.6s"><mpath href="#flow-p2" /></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" repeatCount="indefinite" begin="1.6s" /></circle>
+              <circle r="5" fill="#229ed9"><animateMotion dur="2.4s" repeatCount="indefinite" begin="0.8s"><mpath href="#flow-p3" /></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" repeatCount="indefinite" begin="0.8s" /></circle>
+              <circle r="5" fill="#229ed9"><animateMotion dur="2.4s" repeatCount="indefinite" begin="2s"><mpath href="#flow-p3" /></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" repeatCount="indefinite" begin="2s" /></circle>
+
+              <circle class="fl-pulse" cx="380" cy="200" r="50"><animate attributeName="r" values="50;76" dur="2.4s" repeatCount="indefinite" /><animate attributeName="opacity" values=".35;0" dur="2.4s" repeatCount="indefinite" /></circle>
+              <circle class="fl-pulse" cx="380" cy="200" r="50"><animate attributeName="r" values="50;76" dur="2.4s" begin="1.2s" repeatCount="indefinite" /><animate attributeName="opacity" values=".35;0" dur="2.4s" begin="1.2s" repeatCount="indefinite" /></circle>
+            </g>
+
+            <g>
+              <rect class="fl-card" x="8" y="38" width="184" height="64" rx="14" />
+              <use href="#ico-ig" x="22" y="52" width="36" height="36" />
+              <text class="fl-label fl-ch" x="70" y="67">Instagram</text>
+              <text class="fl-sub" x="70" y="85">Direct messages</text>
+            </g>
+            <g>
+              <rect class="fl-card" x="8" y="168" width="184" height="64" rx="14" />
+              <use href="#ico-wa" x="22" y="182" width="36" height="36" />
+              <text class="fl-label fl-ch" x="70" y="197">WhatsApp</text>
+              <text class="fl-sub" x="70" y="215">Business chats</text>
+            </g>
+            <g>
+              <rect class="fl-card" x="8" y="298" width="184" height="64" rx="14" />
+              <use href="#ico-tg" x="22" y="312" width="36" height="36" />
+              <text class="fl-label fl-ch" x="70" y="327">Telegram</text>
+              <text class="fl-sub" x="70" y="345">Bot chats</text>
+            </g>
+
+            <circle class="fl-hub" cx="380" cy="200" r="50" />
+            <g transform="translate(380 200) scale(2) translate(-16 -16)">
+              <path d="M10.5 22V10l11 12V10" fill="none" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <text class="fl-label" x="380" y="284" text-anchor="middle">nexChat AI</text>
+            <text class="fl-sub fl-hub-sub" x="380" y="303" text-anchor="middle">Understands, replies &amp; acts</text>
+          </svg>
+
+          <div class="flow-link" aria-hidden="true"></div>
+
+          <div class="inbox" role="img" aria-label="Illustration of the nexChat unified inbox showing conversations from Instagram, WhatsApp and Telegram, with AI replies, an updated order and one conversation flagged for the seller.">
+            <div class="inbox-head" aria-hidden="true">
+              <strong>Unified inbox</strong>
+              <span class="inbox-count">4 open</span>
+            </div>
+            <ul class="inbox-list" aria-hidden="true">
+              <li class="inbox-row">
+                <span class="avatar av-1">MR<span class="ch-badge"><svg viewBox="0 0 36 36"><use href="#ico-ig" /></svg></span></span>
+                <div class="inbox-text">
+                  <div class="inbox-top"><strong>Maya R.</strong><time>now</time></div>
+                  <p>Is the linen shirt available in M?</p>
+                  <span class="tag tag-ai">AI replied</span>
+                </div>
+              </li>
+              <li class="inbox-row">
+                <span class="avatar av-2">DK<span class="ch-badge"><svg viewBox="0 0 36 36"><use href="#ico-wa" /></svg></span></span>
+                <div class="inbox-text">
+                  <div class="inbox-top"><strong>Daniel K.</strong><time>1m</time></div>
+                  <p>Can I pick up my order at 5pm?</p>
+                  <span class="tag tag-ok">Order #1043 updated</span>
+                </div>
+              </li>
+              <li class="inbox-row">
+                <span class="avatar av-3">SL<span class="ch-badge"><svg viewBox="0 0 36 36"><use href="#ico-tg" /></svg></span></span>
+                <div class="inbox-text">
+                  <div class="inbox-top"><strong>Sofia L.</strong><time>3m</time></div>
+                  <p>Do you deliver to the city centre?</p>
+                  <span class="tag tag-ai">AI replied</span>
+                </div>
+              </li>
+              <li class="inbox-row">
+                <span class="avatar av-4">AP<span class="ch-badge"><svg viewBox="0 0 36 36"><use href="#ico-wa" /></svg></span></span>
+                <div class="inbox-text">
+                  <div class="inbox-top"><strong>Arjun P.</strong><time>6m</time></div>
+                  <p>I'd like to return an item, please.</p>
+                  <span class="tag tag-you">Needs you</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="mockup-caption">Illustrative example. Names and messages are fictional.</p>
+
+        <div class="integrations" style="margin-top:56px">
+          <div class="integration">
+            <div class="integration-head">
+              <svg class="brand-ico" viewBox="0 0 36 36" aria-hidden="true"><use href="#ico-ig" /></svg>
+              <span class="pill dev">In development</span>
+            </div>
+            <h3>Instagram Messaging</h3>
+            <p>Reply to Instagram direct messages through Meta's official messaging APIs for professional accounts.</p>
+          </div>
+          <div class="integration">
+            <div class="integration-head">
+              <svg class="brand-ico" viewBox="0 0 36 36" aria-hidden="true"><use href="#ico-wa" /></svg>
+              <span class="pill dev">In development</span>
+            </div>
+            <h3>WhatsApp Business Platform</h3>
+            <p>Connect a business's WhatsApp number through Meta's official WhatsApp Business Platform (Cloud API).</p>
+          </div>
+          <div class="integration">
+            <div class="integration-head">
+              <svg class="brand-ico" viewBox="0 0 36 36" aria-hidden="true"><use href="#ico-tg" /></svg>
+              <span class="pill dev">In development</span>
+            </div>
+            <h3>Telegram</h3>
+            <p>Connect a Telegram bot for your business through the official Telegram Bot API and answer customers who message it.</p>
+          </div>
+        </div>
+        <p class="fine-print">Integration availability may change during development, and more channels may be added based on what our users need. nexChat is not affiliated with, endorsed by, or sponsored by Meta Platforms, Inc. or Telegram. Instagram, WhatsApp and Telegram are trademarks of their respective owners.</p>
+      </div>
+    </section>
+
     <!-- ===== Problem & solution ===== -->
-    <section class="section section-alt" id="product">
+    <section class="section" id="product">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Why nexChat</span>
@@ -132,7 +273,7 @@
             <h3>Without nexChat</h3>
             <ul class="compare-list">
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Answering the same questions about price, sizes, availability and delivery again and again.</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Conversations scattered across threads, with no single view of each customer.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Conversations scattered across Instagram, WhatsApp and Telegram, with no single view of each customer.</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Orders written down by hand and payment status checked one message at a time.</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg><span>Follow-ups forgotten, and customers left waiting outside business hours.</span></li>
             </ul>
@@ -141,7 +282,7 @@
             <h3>With nexChat</h3>
             <ul class="compare-list">
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Common questions answered from your own products, policies and FAQs.</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Each customer's conversation and order history in one place.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Every channel in one inbox, with each customer's conversation and order history.</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Carts and orders created from the conversation, with payment status you can track.</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>You stay in control: review, step in, or take over any conversation.</span></li>
             </ul>
@@ -151,7 +292,7 @@
     </section>
 
     <!-- ===== Features ===== -->
-    <section class="section" id="features">
+    <section class="section section-alt" id="features">
       <div class="container">
         <div class="section-head center">
           <span class="eyebrow">Features</span>
@@ -176,8 +317,8 @@
           </article>
           <article class="feature">
             <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></div>
-            <h3>Customer &amp; conversation history</h3>
-            <p>See past messages, orders and preferences for every customer before you reply.</p>
+            <h3>Unified inbox &amp; customer history</h3>
+            <p>Conversations from every connected channel in one place, with past messages and orders for each customer.</p>
           </article>
           <article class="feature">
             <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
@@ -204,7 +345,7 @@
     </section>
 
     <!-- ===== How it works ===== -->
-    <section class="section section-alt" id="how-it-works">
+    <section class="section" id="how-it-works">
       <div class="container">
         <div class="section-head center">
           <span class="eyebrow">How it works</span>
@@ -241,7 +382,7 @@
     </section>
 
     <!-- ===== Audience ===== -->
-    <section class="section" id="who-its-for">
+    <section class="section section-alt" id="who-its-for">
       <div class="container audience">
         <div>
           <span class="eyebrow">Built for growing businesses</span>
@@ -271,44 +412,6 @@
             <div><strong>Service providers</strong><span>Businesses that will benefit from booking and reservation workflows.</span></div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ===== Integrations ===== -->
-    <section class="section section-alt" id="integrations">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Channels &amp; integrations</span>
-          <h2 class="section-title">Meeting customers where they already message.</h2>
-          <p class="section-lead">We're building nexChat to connect with the messaging channels small businesses rely on. Here is where each one stands today.</p>
-        </div>
-        <div class="integrations">
-          <div class="integration">
-            <div class="integration-head">
-              <span class="icon-box" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></svg></span>
-              <span class="pill dev">In development</span>
-            </div>
-            <h3>WhatsApp Business Platform</h3>
-            <p>Connecting a business's WhatsApp number through Meta's official WhatsApp Business Platform (Cloud API).</p>
-          </div>
-          <div class="integration">
-            <div class="integration-head">
-              <span class="icon-box" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></span>
-              <span class="pill dev">In development</span>
-            </div>
-            <h3>Instagram Messaging</h3>
-            <p>Responding to Instagram direct messages through Meta's official messaging APIs for professional accounts.</p>
-          </div>
-          <div class="integration">
-            <div class="integration-head">
-              <span class="icon-box" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span>
-              <span class="pill planned">Planned</span>
-            </div>
-            <h3>More channels &amp; tools</h3>
-            <p>Additional channels and business tools will be considered based on what our users need.</p>
-          </div>
-        </div>
-        <p class="fine-print">Integration availability may change during development. nexChat is not affiliated with, endorsed by, or sponsored by Meta Platforms, Inc. WhatsApp and Instagram are trademarks of their respective owners.</p>
       </div>
     </section>
 
@@ -370,14 +473,15 @@
       <div class="footer-grid">
         <div class="footer-about">
           <a class="brand" href="./" aria-label="nexChat home">
-            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 10.5A2.5 2.5 0 0 1 11.5 8h9A2.5 2.5 0 0 1 23 10.5v7a2.5 2.5 0 0 1-2.5 2.5H15l-4.2 3.4c-.5.4-1.3 0-1.3-.6V20A2.5 2.5 0 0 1 9 17.5z" fill="#fff"/><path d="M13 17v-4.2c0-.5.6-.7.9-.3l3.2 4.2c.3.4.9.2.9-.3V12" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M9 0h14a9 9 0 0 1 9 9v14a9 9 0 0 1-9 9H3a3 3 0 0 1-3-3V9a9 9 0 0 1 9-9z" fill="#4f46e5"/><path d="M10.5 22V10l11 12V10" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="brand-name">nex<span>Chat</span></span>
           </a>
-          <p>nexChat by Exira Labs. AI-powered customer conversations for small businesses.</p>
+          <p>nexChat by Exira Labs. One AI-powered inbox for your customer conversations.</p>
         </div>
         <div class="footer-col">
           <h4>Product</h4>
           <ul>
+            <li><a href="#channels">Channels</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#about">About</a></li>

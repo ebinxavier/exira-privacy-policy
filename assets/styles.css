@@ -382,6 +382,122 @@ h1, h2, h3, h4 { color: var(--text); line-height: 1.2; letter-spacing: -0.015em;
   @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 }
 
+/* ---------- Channels flow ---------- */
+
+.flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) 64px minmax(0, 1fr);
+  align-items: center;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.flow-diagram { width: 100%; height: auto; overflow: visible; }
+.fl-card { fill: var(--surface); stroke: var(--border); stroke-width: 1.5; filter: drop-shadow(0 4px 10px rgba(15, 23, 42, 0.06)); }
+.fl-path { fill: none; stroke: var(--border-strong); stroke-width: 2; stroke-dasharray: 4 6; }
+.fl-label { fill: var(--text); font: 600 16px var(--font); }
+.fl-sub { fill: var(--text-muted); font: 500 12.5px var(--font); }
+.fl-hub { fill: var(--accent); filter: drop-shadow(0 10px 24px rgba(79, 70, 229, 0.35)); }
+.fl-pulse { fill: none; stroke: var(--accent); stroke-width: 2; }
+
+.flow-link {
+  align-self: center;
+  justify-self: stretch;
+  height: 4px;
+  margin: 0 4px;
+  border-radius: 4px;
+  background: repeating-linear-gradient(90deg, var(--accent) 0 8px, transparent 8px 16px);
+  opacity: 0.55;
+  animation: flow-x 0.8s linear infinite;
+}
+@keyframes flow-x { to { background-position: 16px 0; } }
+@keyframes flow-y { to { background-position: 0 16px; } }
+
+.inbox {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.inbox-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  background: #fbfcfe;
+}
+.inbox-head strong { color: var(--text); font-size: 0.92rem; }
+.inbox-count { font-size: 0.75rem; font-weight: 600; color: var(--accent); background: var(--accent-soft); padding: 3px 9px; border-radius: 999px; }
+.inbox-list { list-style: none; }
+.inbox-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 13px 18px;
+  border-bottom: 1px solid var(--border);
+}
+.inbox-row:last-child { border-bottom: 0; }
+.inbox-row .avatar { position: relative; width: 36px; height: 36px; }
+.av-1 { background: #fde68a; color: #78350f; }
+.av-2 { background: #bbf7d0; color: #14532d; }
+.av-3 { background: #bae6fd; color: #0c4a6e; }
+.av-4 { background: #fecdd3; color: #881337; }
+.ch-badge {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--surface);
+  padding: 1.5px;
+}
+.ch-badge svg { width: 100%; height: 100%; }
+.inbox-text { min-width: 0; flex: 1; }
+.inbox-top { display: flex; justify-content: space-between; gap: 8px; }
+.inbox-top strong { font-size: 0.86rem; color: var(--text); }
+.inbox-top time { font-size: 0.72rem; color: var(--text-muted); }
+.inbox-text p { font-size: 0.82rem; color: var(--text-body); line-height: 1.4; margin: 1px 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tag { display: inline-block; font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; }
+.tag-ai { color: var(--accent); background: var(--accent-soft); }
+.tag-ok { color: var(--success); background: var(--success-soft); }
+.tag-you { color: var(--warning); background: var(--warning-soft); }
+.brand-ico { width: 42px; height: 42px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .inbox-row { animation: inbox-in 9s ease infinite both; }
+  .inbox-row:nth-child(2) { animation-delay: .9s; }
+  .inbox-row:nth-child(3) { animation-delay: 1.8s; }
+  .inbox-row:nth-child(4) { animation-delay: 2.7s; }
+  @keyframes inbox-in {
+    0% { opacity: 0; transform: translateX(-12px); }
+    6%, 88% { opacity: 1; transform: none; }
+    96%, 100% { opacity: 0; transform: none; }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-motion { display: none; }
+}
+
+@media (max-width: 640px) {
+  .fl-label { font-size: 21px; }
+  .fl-sub { display: none; }
+  .fl-ch { transform: translateY(10px); }
+}
+
+@media (max-width: 900px) {
+  .flow { grid-template-columns: 1fr; max-width: 480px; }
+  .flow-link {
+    justify-self: center;
+    width: 4px;
+    height: 40px;
+    margin: 4px 0;
+    background: repeating-linear-gradient(180deg, var(--accent) 0 8px, transparent 8px 16px);
+    animation-name: flow-y;
+  }
+}
+
 /* ---------- Problem / solution ---------- */
 
 .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }

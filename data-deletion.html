@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data Deletion Instructions — nexChat by Exira Labs</title>
-  <meta name="description" content="How to request deletion of your data from nexChat, including data received through Facebook, Instagram and WhatsApp." />
+  <meta name="description" content="How to request deletion of your data from nexChat, including data received through Facebook, Instagram, WhatsApp and Telegram." />
   <link rel="canonical" href="https://nexchat.exiralabs.com/data-deletion.html" />
   <meta name="theme-color" content="#4f46e5" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -20,7 +20,7 @@
   <header class="site-header is-solid">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="nexChat home">
-        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 10.5A2.5 2.5 0 0 1 11.5 8h9A2.5 2.5 0 0 1 23 10.5v7a2.5 2.5 0 0 1-2.5 2.5H15l-4.2 3.4c-.5.4-1.3 0-1.3-.6V20A2.5 2.5 0 0 1 9 17.5z" fill="#fff"/><path d="M13 17v-4.2c0-.5.6-.7.9-.3l3.2 4.2c.3.4.9.2.9-.3V12" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M9 0h14a9 9 0 0 1 9 9v14a9 9 0 0 1-9 9H3a3 3 0 0 1-3-3V9a9 9 0 0 1 9-9z" fill="#4f46e5"/><path d="M10.5 22V10l11 12V10" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="brand-name">nex<span>Chat</span></span>
         <span class="brand-by">by Exira Labs</span>
       </a>
@@ -29,6 +29,7 @@
         <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="./#channels">Channels</a>
         <a href="./#features">Features</a>
         <a href="./#how-it-works">How It Works</a>
         <a href="./#about">About</a>
@@ -60,7 +61,7 @@
         <ol>
           <li><a href="#overview">Overview</a></li>
           <li><a href="#request">How to request deletion</a></li>
-          <li><a href="#meta">Remove nexChat from Meta</a></li>
+          <li><a href="#meta">Disconnect nexChat</a></li>
           <li><a href="#business-users">For business users</a></li>
           <li><a href="#end-customers">For end customers</a></li>
           <li><a href="#what-is-deleted">What we delete</a></li>
@@ -72,7 +73,7 @@
       <article class="prose">
         <section id="overview">
           <h2>Overview</h2>
-          <p>You have the right to ask Exira Labs to delete personal data we hold about you in connection with nexChat, including data received through Facebook, Instagram or WhatsApp. This page explains how to make a request and what happens next.</p>
+          <p>You have the right to ask Exira Labs to delete personal data we hold about you in connection with nexChat, including data received through Facebook, Instagram, WhatsApp or Telegram. This page explains how to make a request and what happens next.</p>
           <div class="callout">
             <p><strong>Quickest way:</strong> email <a href="mailto:support@exiralabs.com?subject=Data%20Deletion%20Request" data-contact-email data-subject="Data Deletion Request" data-contact-email-text>support@exiralabs.com</a> with the subject <strong>"Data Deletion Request"</strong>. No account or login is needed.</p>
           </div>
@@ -90,6 +91,7 @@
                 <li>The email address of your nexChat account, if you are a business user.</li>
                 <li>Your WhatsApp phone number or WhatsApp Business phone number ID, if your request relates to WhatsApp.</li>
                 <li>Your Instagram username or Facebook name, if your request relates to Instagram or Facebook.</li>
+                <li>Your Telegram username, if your request relates to Telegram.</li>
                 <li>The name of the business you messaged, if you are an end customer.</li>
               </ul>
             </li>
@@ -110,15 +112,15 @@ Please delete my personal data held by nexChat.
 
 Name:
 Account email (if any):
-WhatsApp number / Instagram username / Facebook name (if relevant):
+WhatsApp number / Instagram, Facebook or Telegram name (if relevant):
 Business I messaged (if I am a customer):
 
 Thank you.</pre>
         </section>
 
         <section id="meta">
-          <h2>Remove nexChat from your Meta account</h2>
-          <p>You can also stop nexChat from accessing your Facebook, Instagram or WhatsApp data at any time:</p>
+          <h2>Disconnect nexChat from your accounts</h2>
+          <p>You can also stop nexChat from accessing your Facebook, Instagram, WhatsApp or Telegram data at any time:</p>
           <div class="option-grid">
             <div class="option">
               <h3>Facebook &amp; Instagram</h3>
@@ -127,6 +129,16 @@ Thank you.</pre>
             <div class="option">
               <h3>WhatsApp Business</h3>
               <p>In Meta Business Suite or Business Manager, open <em>Business settings → Accounts → WhatsApp accounts</em> (or <em>Integrations → Connected apps</em>) and remove nexChat's access.</p>
+            </div>
+          </div>
+          <div class="option-grid">
+            <div class="option">
+              <h3>Telegram (businesses)</h3>
+              <p>Disconnect the bot in nexChat, or revoke its token by sending <code>/revoke</code> to <em>@BotFather</em> in Telegram.</p>
+            </div>
+            <div class="option">
+              <h3>Telegram (customers)</h3>
+              <p>Open the business's bot, tap its name, and choose <em>Stop bot</em> or <em>Block</em> so no new messages reach nexChat.</p>
             </div>
           </div>
           <p>Removing access stops nexChat from receiving new data from your account and invalidates our access tokens. To delete data we already store, also send us a deletion request as described above. If Meta notifies us that you have removed the app and asked for your data to be deleted, we will treat that as a deletion request.</p>
@@ -142,7 +154,7 @@ Thank you.</pre>
         <section id="end-customers">
           <h2>For end customers of a business</h2>
           <p>If you messaged a business that uses nexChat, that business controls your conversation and order data. You can ask the business directly to delete it, or email us. We will verify the request and either delete the data or work with the business to do so.</p>
-          <p>Please note that deleting data from nexChat does not delete messages from your own WhatsApp, Instagram or Facebook app, or from the business's own devices. Those are controlled by you, the business and Meta.</p>
+          <p>Please note that deleting data from nexChat does not delete messages from your own WhatsApp, Instagram, Facebook or Telegram app, or from the business's own devices. Those are controlled by you, the business, Meta and Telegram.</p>
         </section>
 
         <section id="what-is-deleted">
@@ -152,7 +164,7 @@ Thank you.</pre>
             <li>Account and profile information.</li>
             <li>Messages, conversation history and AI-generated replies.</li>
             <li>Customer records, carts, orders and payment-status records.</li>
-            <li>Meta platform identifiers, access tokens and cached webhook data.</li>
+            <li>Meta and Telegram identifiers, access and bot tokens, and cached webhook data.</li>
           </ul>
           <p>We may keep limited information where the law requires it (for example, tax or accounting records) or where needed to resolve disputes or prevent fraud, and only for as long as necessary. Residual copies in backups are removed as those backups expire on their normal rotation.</p>
         </section>
@@ -164,7 +176,7 @@ Thank you.</pre>
               <thead><tr><th scope="col">Step</th><th scope="col">When</th></tr></thead>
               <tbody>
                 <tr><td>We acknowledge your request</td><td>Within 7 days</td></tr>
-                <tr><td>Access tokens for connected Meta accounts are revoked</td><td>Promptly after verification</td></tr>
+                <tr><td>Access tokens for connected Meta and Telegram accounts are revoked</td><td>Promptly after verification</td></tr>
                 <tr><td>Data is deleted from active systems</td><td>Within 30 days of verification</td></tr>
                 <tr><td>We confirm deletion by email</td><td>When deletion is complete</td></tr>
               </tbody>
@@ -186,14 +198,15 @@ Thank you.</pre>
       <div class="footer-grid">
         <div class="footer-about">
           <a class="brand" href="./" aria-label="nexChat home">
-            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 10.5A2.5 2.5 0 0 1 11.5 8h9A2.5 2.5 0 0 1 23 10.5v7a2.5 2.5 0 0 1-2.5 2.5H15l-4.2 3.4c-.5.4-1.3 0-1.3-.6V20A2.5 2.5 0 0 1 9 17.5z" fill="#fff"/><path d="M13 17v-4.2c0-.5.6-.7.9-.3l3.2 4.2c.3.4.9.2.9-.3V12" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M9 0h14a9 9 0 0 1 9 9v14a9 9 0 0 1-9 9H3a3 3 0 0 1-3-3V9a9 9 0 0 1 9-9z" fill="#4f46e5"/><path d="M10.5 22V10l11 12V10" stroke="#fff" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="brand-name">nex<span>Chat</span></span>
           </a>
-          <p>nexChat by Exira Labs. AI-powered customer conversations for small businesses.</p>
+          <p>nexChat by Exira Labs. One AI-powered inbox for your customer conversations.</p>
         </div>
         <div class="footer-col">
           <h4>Product</h4>
           <ul>
+            <li><a href="./#channels">Channels</a></li>
             <li><a href="./#features">Features</a></li>
             <li><a href="./#how-it-works">How It Works</a></li>
             <li><a href="./#about">About</a></li>
